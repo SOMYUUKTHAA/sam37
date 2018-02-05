@@ -2,12 +2,15 @@
 int swap(int a,int b);
 void main()
 {
- int c=10,d=20,temp;
+ int a,b;
+ printf("\nENTER TWO VALUES\n");
+ scanf("%d%d",&a,&b);
  printf("BEFORE SWAPPING");
- printf("\nTHE VALUES ARE:\t%d\t%d",c,d);
+ printf("\nTHE VALUES ARE:\t%d\t%d",a,b);
  printf("\nCALLING SWAP");
- swap(c,d);
+ swap(a,b);
  printf("\nAFTER SWAPPING");
+ printf("\nTHE VALUES ARE:\t%d\t%d",a,b);
 
 }
 int swap(int a,int b)
@@ -16,5 +19,6 @@ int swap(int a,int b)
     temp=a;
     a=b;
     b=temp;
-    printf("\nTHE VALUES ARE:\t%d\t%d",a,b);
+    printf("\nvalues are:%d\t%d",a,b);
+   return(a,b);
 }
